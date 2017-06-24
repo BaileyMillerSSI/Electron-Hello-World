@@ -11,7 +11,8 @@
     "e2e": "ng e2e",
     "details-copy": "copy .\\src\\main.js .\\dist\\main.js && copy .\\src\\package.json .\\dist\\package.json",
     "electron-dev": "npm run build && xcopy .\\dist .\\electron\\dev /s /e /y && electron .\\electron\\dev\\",
-    "electron-prod": "npm run build && xcopy .\\dist .\\electron\\prod /s /e  && electron .\\electron\\prod\\"
+    "electron-prod": "npm run build && xcopy .\\dist .\\electron\\prod /s /e  && electron .\\electron\\prod\\",
+    "build-windows": "electron-packager D:\\Source\\Electron-Hello-World\\AngularProfile-Page\\electron\\prod\\ --out D:\\Source\\Electron-Hello-World\\AngularProfile-Page\\Builds\\Windows --platform=win32 --arch=ia32 --overwrite}"
   },
   "private": true,
   "dependencies": {

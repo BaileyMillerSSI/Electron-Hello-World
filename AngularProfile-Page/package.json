@@ -10,8 +10,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "details-copy": "copy .\\src\\main.js .\\dist\\main.js && copy .\\src\\package.json .\\dist\\package.json",
-    "electron-dev": "npm run build && copy .\\dist .\\electron\\dev && electron .\\electron\\dev\\",
-    "electron-prod": "npm run build && copy .\\dist .\\electron\\prod && electron .\\electron\\prod\\"
+    "electron-dev": "npm run build && xcopy .\\dist .\\electron\\dev /s /e /y && electron .\\electron\\dev\\",
+    "electron-prod": "npm run build && xcopy .\\dist .\\electron\\prod /s /e  && electron .\\electron\\prod\\"
   },
   "private": true,
   "dependencies": {

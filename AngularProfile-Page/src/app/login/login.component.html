@@ -1,3 +1,42 @@
-<p>
-  login works!
-</p>
+<form id="LoginForm" class="form-signin" [formGroup]="LoginForm" (ngSubmit)="Login(LoginForm.value)">
+
+  <div class="row justify-content-center">
+    <img class="form-signin-heading img-responsive" src="assets/images/logos/login-icon.png" height="100" />
+  </div>
+  <div class="form-group">
+    <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+    <div>
+      <input type="email" id="inputEmail" class="form-control rounded" placeholder="Email address" [formControl]="LoginForm.controls['Email']"
+        autofocus />
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+    <div>
+      <input type="password" id="inputPassword" class="form-control rounded" placeholder="Password" [formControl]="LoginForm.controls['Password']"
+      />
+    </div>
+  </div>
+
+  <div class="checkbox">
+    <label>
+       <input [formControl]="LoginForm.controls['RememberMe']" type="checkbox" value="remember-me"> Remember me
+    </label>
+  </div>
+  <div class="form-group">
+    <button [disabled]="!LoginForm.valid || loading" [ngClass]="LoginButtonAppearance()" class="btn btn-lg btn-block FakeClickable" type="submit">{{LoginMessage}}</button>
+  </div>
+
+<div *ngIf="alertVisible">
+  <p>
+    <ngb-alert [type]="'danger'" (close)="closeAlert(alert)">{{ alertMessage }}</ngb-alert>
+  </p>
+</div>
+
+</form>
+
+<div class="loading text-center" *ngIf="loading">
+
+  <i class="fa fa-cog fa-spin fa-5x"></i>
+
+</div>

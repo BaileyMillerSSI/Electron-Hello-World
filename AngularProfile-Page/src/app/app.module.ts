@@ -6,11 +6,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfilePageComponent
+    ProfilePageComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

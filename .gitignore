@@ -4,5 +4,5 @@
 
 *.sqlite
 *.sqlite-journal
-Electron
+electron
 dist

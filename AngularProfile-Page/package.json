@@ -5,13 +5,13 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && npm run details-copy",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "details-copy": "copy .\\src\\main.js .\\dist\\main.js && copy .\\src\\package.json .\\dist\\package.json",
-    "electron-dev": "ng build && copy .\\dist\\* .\\electron\\dev\\* && electron .\\electron\\dev\\",
-    "electron-prod": "ng build && copy .\\dist\\* .\\electron\\prod\\* && electron .\\electron\\prod\\"
+    "electron-dev": "npm run build && copy .\\dist .\\electron\\dev && electron .\\electron\\dev\\",
+    "electron-prod": "npm run build && copy .\\dist .\\electron\\prod && electron .\\electron\\prod\\"
   },
   "private": true,
   "dependencies": {

@@ -16,11 +16,12 @@ function getInstallerConfig() {
         appDirectory: path.join(outPath, 'Login Screen Demo-win32-ia32'),
         authors: 'Bailey Miller',
         description: "Login App",
-        version: "0.0.1",
+        version: "0.0.2",
         noMsi: true,
         outputDirectory: path.join(outPath, 'Master'),
         exe: "Login Screen Demo.exe",
         setupExe: 'LoginSetup.exe',
-        setupIcon: path.join(rootPath, 'src', 'favicon.ico')
+        setupIcon: path.join(rootPath, 'src', 'favicon.ico'),
+        loadingGif: path.join(rootPath, 'src', 'assets', 'Images', 'installing.gif')
     })
 }

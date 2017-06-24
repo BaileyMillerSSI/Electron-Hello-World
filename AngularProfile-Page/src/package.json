@@ -1,6 +1,7 @@
 {
-    "name": "AngularProfilePicture",
+    "name": "loginscreendemo",
     "version": "0.0.0",
     "main": "main.js",
-    "productName": "Login Screen Demo"
+    "productName": "Login Screen Demo",
+    "title":"Login Screen"
 }

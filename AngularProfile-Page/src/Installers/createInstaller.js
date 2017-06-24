@@ -14,12 +14,13 @@ function getInstallerConfig() {
     const outPath = path.join(rootPath, 'Builds', 'Windows')
 
     return Promise.resolve({
-        appDirectory: path.join(outPath, 'AngularProfilePicture-win32-ia32'),
+        appDirectory: path.join(outPath, 'Login Screen Demo-win32-ia32'),
         authors: 'Bailey Miller',
         description: "Login App",
         version: "1.1.2",
         noMsi: true,
         outputDirectory: path.join(outPath, 'Master'),
+        exe: "Login Screen Demo.exe",
         setupExe: 'LoginSetup.exe',
         setupIcon: path.join(rootPath, 'src', 'favicon.ico')
     })

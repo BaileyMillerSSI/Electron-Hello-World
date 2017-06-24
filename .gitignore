@@ -4,5 +4,5 @@
 
 *.sqlite
 *.sqlite-journal
-electron
-dist
+/electron
+/dist

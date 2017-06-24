@@ -3,5 +3,5 @@
     "version": "0.0.1",
     "main": "main.js",
     "productName": "Login Screen Demo",
-    "description": "Login Screen App"
+    "Description": "Login Screen App"
 }

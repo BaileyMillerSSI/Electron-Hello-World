@@ -16,9 +16,9 @@ function getInstallerConfig() {
     return Promise.resolve({
         appDirectory: path.join(outPath, 'AngularProfilePicture-win32-ia32'),
         authors: 'Bailey Miller',
+        description: "An app",
         noMsi: true,
         outputDirectory: path.join(outPath, 'Master'),
-        exe: 'LoginBailey.exe',
         setupExe: 'LoginSetup.exe',
         setupIcon: path.join(rootPath, 'src', 'favicon.ico')
     })

@@ -13,7 +13,7 @@
     "electron-dev": "npm run build && xcopy .\\dist .\\electron\\dev /s /e /y && electron .\\electron\\dev\\",
     "electron-prod": "npm run build && xcopy .\\dist .\\electron\\prod /s /e  && electron .\\electron\\prod\\",
     "electron-prod-build": "npm run build && xcopy .\\dist .\\electron\\prod /s /e /y",
-    "build-windows": "npm run electron-prod-build && electron-packager D:\\Source\\Electron-Hello-World\\AngularProfile-Page\\electron\\prod\\ --out D:\\Source\\Electron-Hello-World\\AngularProfile-Page\\Builds\\Windows --platform=win32 --arch=ia32 --overwrite",
+    "build-windows": "npm run electron-prod-build && electron-packager D:\\Source\\Electron-Hello-World\\AngularProfile-Page\\electron\\prod\\ --out D:\\Source\\Electron-Hello-World\\AngularProfile-Page\\Builds\\Windows --platform=win32 --arch=ia32 --overwrite --win32metadata.ProductName=\"Login Screen Demo\"",
     "windows-installer": "npm run build-windows && node .\\src\\Installers\\createInstaller.js"
   },
   "private": true,

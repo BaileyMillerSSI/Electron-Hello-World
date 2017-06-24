@@ -12,7 +12,6 @@ function getInstallerConfig() {
     console.log('creating windows installer')
     const rootPath = path.join('./')
     const outPath = path.join(rootPath, 'Builds', 'Windows')
-
     return Promise.resolve({
         appDirectory: path.join(outPath, 'Login Screen Demo-win32-ia32'),
         authors: 'Bailey Miller',
@@ -22,6 +21,7 @@ function getInstallerConfig() {
         outputDirectory: path.join(outPath, 'Master'),
         exe: "Login Screen Demo.exe",
         setupExe: 'LoginSetup.exe',
-        setupIcon: path.join(rootPath, 'src', 'favicon.ico')
+        setupIcon: path.join(rootPath, 'src', 'favicon.ico'),
+        iconUrl: path.join(rootPath, 'src', 'favicon.ico')
     })
 }

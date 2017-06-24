@@ -64,7 +64,7 @@ export class LoginComponent implements OnInit
       this.LoginMessage = "Sign in"
       return "btn-success";
     } else if (!this.LoginForm.valid && !this.loading) {
-      this.LoginMessage = "Validation Issues";
+      this.LoginMessage = "Validation Issue(s)";
       return "btn-danger";
     }
     else if (this.loading && this.LoginForm.valid) {

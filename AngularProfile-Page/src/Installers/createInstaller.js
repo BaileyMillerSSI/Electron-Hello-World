@@ -21,7 +21,6 @@ function getInstallerConfig() {
         outputDirectory: path.join(outPath, 'Master'),
         exe: "Login Screen Demo.exe",
         setupExe: 'LoginSetup.exe',
-        setupIcon: path.join(rootPath, 'src', 'favicon.ico'),
-        iconUrl: path.join(rootPath, 'src', 'favicon.ico')
+        setupIcon: path.join(rootPath, 'src', 'favicon.ico')
     })
 }

@@ -16,7 +16,7 @@ function getInstallerConfig() {
         appDirectory: path.join(outPath, 'Login Screen Demo-win32-ia32'),
         authors: 'Bailey Miller',
         description: "Login App",
-        version: "1.1.2",
+        version: "0.0.1",
         noMsi: true,
         outputDirectory: path.join(outPath, 'Master'),
         exe: "Login Screen Demo.exe",

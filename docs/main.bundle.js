@@ -178,11 +178,11 @@ var LoginComponent = (function () {
     };
     LoginComponent.prototype.LoginButtonAppearance = function () {
         if (this.LoginForm.valid && !this.LoginForm.controls["RememberMe"].value && !this.loading) {
-            this.LoginMessage = "Sign in";
+            this.LoginMessage = "Login in";
             return "btn-warning";
         }
         else if (this.LoginForm.valid && this.LoginForm.controls["RememberMe"].value && !this.loading) {
-            this.LoginMessage = "Sign in";
+            this.LoginMessage = "Login in";
             return "btn-success";
         }
         else if (!this.LoginForm.valid && !this.loading) {

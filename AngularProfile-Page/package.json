@@ -15,7 +15,7 @@
     "electron-prod-build": "npm run build && xcopy .\\dist .\\electron\\prod /s /e /y",
     "build-windows": "npm run electron-prod-build && electron-packager D:\\Source\\Electron-Hello-World\\AngularProfile-Page\\electron\\prod\\ --out D:\\Source\\Electron-Hello-World\\AngularProfile-Page\\Builds\\Windows --platform=win32 --arch=ia32 --overwrite --win32metadata.ProductName=\"Login Screen Demo\"",
     "windows-installer": "npm run build-windows && node .\\src\\Installers\\createInstaller.js",
-    "github-build": "npm run build && rmdir ..\\docs\\* -R && xcopy .\\dist\\* ..\\docs\\* /s /e /y"
+    "github-build": "npm run build && xcopy .\\dist ..\\docs /s /e /y"
   },
   "private": true,
   "dependencies": {

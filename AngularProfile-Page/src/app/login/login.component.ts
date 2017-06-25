@@ -58,10 +58,10 @@ export class LoginComponent implements OnInit
   public LoginButtonAppearance(): string
   {
     if (this.LoginForm.valid && !this.LoginForm.controls["RememberMe"].value && !this.loading) {
-      this.LoginMessage = "Sign in";
+      this.LoginMessage = "Login in";
       return "btn-warning";
     } else if (this.LoginForm.valid && this.LoginForm.controls["RememberMe"].value && !this.loading) {
-      this.LoginMessage = "Sign in"
+      this.LoginMessage = "Login in"
       return "btn-success";
     } else if (!this.LoginForm.valid && !this.loading) {
       this.LoginMessage = "Validation Issue(s)";
